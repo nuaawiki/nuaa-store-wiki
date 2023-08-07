@@ -24,7 +24,7 @@ export const ArticleInfo = (props) => {
                   alt={BLOG.author}
                   width={24}
                   height={24}
-                  src={`https://gravatar.com/avatar/${emailHash}`}
+                  src={`https://s2.loli.net/2023/08/07/WOo5eAbuSL6NXR2.png`}
                   className="rounded-full"
                 />
                 <p className="ml-2 md:block">{BLOG.author}</p>
