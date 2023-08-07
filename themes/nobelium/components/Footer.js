@@ -27,7 +27,7 @@ export const Footer = (props) => {
          <p>
            © {BLOG.AUTHOR} {copyrightDate}
          </p>
-         <Vercel />
+         
        </div>
      </div>
    </footer>
