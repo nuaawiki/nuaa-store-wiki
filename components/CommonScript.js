@@ -116,7 +116,7 @@ const CommonScript = () => {
 
 {/* 添加umami统计脚本 */}
     <script async src="https://umami.mynotion.life/script.js" data-website-id="f2e4230f-afc3-497f-b740-403f8b6e5bdd"></script>
-      
+      <script async src="https://umami.mynotion.life/script.js" data-website-id="1f2c4e4e-a827-4fd9-8910-09d66061a26b"></script>
   </>)
 }
 
