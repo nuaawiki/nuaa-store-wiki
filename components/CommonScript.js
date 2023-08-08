@@ -115,7 +115,6 @@ const CommonScript = () => {
     { /* umami */ }
     {<script async src="https://umami.mynotion.life/script.js" data-website-id="f2e4230f-afc3-497f-b740-403f8b6e5bdd"></script>}
 
-
     {/* 引入音乐播放 */}
     {JSON.parse(BLOG.MUSIC_PLAYER) && <script async src={BLOG.MUSIC_PLAYER_CDN_URL} />}
     {JSON.parse(BLOG.MUSIC_PLAYER) && JSON.parse(BLOG.MUSIC_PLAYER_METING) && <script async src="https://cdnjs.cloudflare.com/ajax/libs/meting/2.0.1/Meting.min.js" />}
