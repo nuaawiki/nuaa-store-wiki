@@ -119,6 +119,36 @@ const CommonScript = () => {
     {/* 添加umami统计脚本 */}
     <script async src="https://umami.mynotion.life/script.js" data-website-id="f2e4230f-afc3-497f-b740-403f8b6e5bdd"></script>
     <script async src="https://umami.mynotion.life/script.js" data-website-id="76101fb8-f984-4471-b4de-a5f8998b409f"></script>
+
+    {/* 添加nuaawiki clarity统计脚本 */}
+      <script
+        type="text/javascript"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "ibs5g6hs22");
+          `
+        }}
+      />
+
+    {/* 添加demonuaastore clarity 统计脚本 */}
+      <script
+        type="text/javascript"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "ibs6rnryp9");
+          `
+        }}
+      />
+
+      
   </>)
 }
 
