@@ -27,7 +27,9 @@ export const Footer = (props) => {
          <p>
            © {BLOG.AUTHOR} {copyrightDate}
          </p>
-         
+         <p>
+           just a test
+           </p>
        </div>
      </div>
    </footer>
