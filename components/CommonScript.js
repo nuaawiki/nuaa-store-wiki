@@ -116,7 +116,7 @@ const CommonScript = () => {
     {JSON.parse(BLOG.MUSIC_PLAYER) && <script async src={BLOG.MUSIC_PLAYER_CDN_URL} />}
     {JSON.parse(BLOG.MUSIC_PLAYER) && JSON.parse(BLOG.MUSIC_PLAYER_METING) && <script async src="https://cdnjs.cloudflare.com/ajax/libs/meting/2.0.1/Meting.min.js" />}
 
-{/* 添加umami统计脚本 */}
+    {/* 添加umami统计脚本 */}
     <script async src="https://umami.mynotion.life/script.js" data-website-id="f2e4230f-afc3-497f-b740-403f8b6e5bdd"></script>
     <script async src="https://umami.mynotion.life/script.js" data-website-id="76101fb8-f984-4471-b4de-a5f8998b409f"></script>
   </>)
