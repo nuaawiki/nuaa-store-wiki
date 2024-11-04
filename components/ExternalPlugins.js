@@ -119,6 +119,30 @@ const ExternalPlugin = props => {
     eval(GLOBAL_JS)
   }, [])
 
+  // 在这里插入新的 useEffect
+  useEffect(() => {
+    window.chatwootSettings = {
+      position: "right",
+      type: "expanded_bubble",
+      launcherTitle: "联系客服",
+    };
+    (function (d, t) {
+      var BASE_URL = "https://app.chatwoot.com";
+      var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+      g.src = BASE_URL + "/packs/js/sdk.js";
+      g.defer = true;
+      g.async = true;
+      s.parentNode.insertBefore(g, s);
+      g.onload = function () {
+        window.chatwootSDK.run({
+          websiteToken: 'v8pMay984Hsm1UW2WcwtSypz',
+          baseUrl: BASE_URL,
+        });
+      };
+    })(document, "script");
+  }, []);
+
   if (DISABLE_PLUGIN) {
     return null
   }
@@ -362,8 +386,6 @@ const ExternalPlugin = props => {
           }}
         />
       )}
-      {/* 添加ChatWay Widget */}
-      <script id="chatway" async src="https://cdn.chatway.app/widget.js?id=yk5mYFb6WOYx"></script>
     </>
   )
 }
