@@ -149,7 +149,7 @@ const Comment = ({ frontMatter, className }) => {
           )}
 
           {COMMENT_TWIKOO_ENV_ID && (
-            <div key='Twikoo'>
+            <div key='评论一下'>
               <TwikooCompenent />
             </div>
           )}
